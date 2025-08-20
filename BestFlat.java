@@ -49,7 +49,13 @@ public class BestFlat {
         System.out.println("\n---- Monthly Cost Calculation ----");
         for (Flat f : flats) {
             int cost = f.calculateCost();
-            System.out.println("Flat " + f.name + " => Rs." + cost);
+            System.out.println("------------------------------------------");
+            System.out.println("Flat Name          : " + f.name);
+            System.out.println("Rent               : Rs." + f.rent);
+            System.out.println("Distance (km)      : " + f.distance);
+            System.out.println("Travel Time (min)  : " + f.time);
+            System.out.println("Location Advantage : Rs." + f.locationAdvantage);
+            System.out.println("Total Monthly Cost : Rs." + cost);
             if (cost < minCost) {
                 minCost = cost;
                 bestFlat = f;
